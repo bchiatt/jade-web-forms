@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Boxes
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h3
+      a(href='/boxes') Make Even More Boxes
+
+      div
+        -for(var i = 0; i < boxes.length; i++)
+          div(style='background-color: #{boxes[i].color}; height: #{boxes[i].height}px; width: #{boxes[i].width}px; display: inline-block; margin: 10px' )

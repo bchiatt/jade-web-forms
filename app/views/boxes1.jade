@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Boxes
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Let's create boxes!
+    form(method='post', action='/boxes')
+      label # Boxes
+      br
+      input(type='text', name='number', placeholder='how many?', autofocus=true)
+      br
+      label Width Range
+      br
+      input(type='text', name='width', placeholder='low-high')
+      br
+      label Height Range
+      br
+      input(type='text', name='height', placeholder='low-high')
+      br
+      label List Colors
+      br
+      textarea(style='height:100px', name='colors', placeholder='color, color, color, ...')
+      br
+      button Make Boxes!

@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Calc
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Calculator
+    form(method='post', action='/calc')
+      input(type='text', name='x', placeholder='x', autofocus=true)
+      select(name='sign')
+        option +
+        option -
+        option *
+        option /
+      input(type='text', name='y', placeholder='y')
+      button Calculate
+    h3 #{x} #{symb} #{y} = #{result}
+
